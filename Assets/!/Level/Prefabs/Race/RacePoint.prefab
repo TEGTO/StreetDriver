@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4209446360786862939}
   - component: {fileID: 1674085099572770631}
   - component: {fileID: 3378053394672080630}
+  - component: {fileID: 5642982628290897341}
   m_Layer: 0
   m_Name: RacePoint
   m_TagString: Untagged
@@ -31,7 +32,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8687452267096044237}
   - {fileID: 5107971113594582744}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -77,60 +77,21 @@ MonoBehaviour:
   processLayerMask:
     serializedVersion: 2
     m_Bits: 256
-  playerTag: Player
---- !u!1 &7392526251490603503
-GameObject:
+  pointBody: {fileID: 5595995244856519778}
+  addPointToManagerAutomatically: 1
+--- !u!114 &5642982628290897341
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8687452267096044237}
-  - component: {fileID: 6133181938159170751}
-  m_Layer: 0
-  m_Name: Trigger
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8687452267096044237
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7392526251490603503}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 4, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4209446360786862939}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &6133181938159170751
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7392526251490603503}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
+  m_GameObject: {fileID: 6722246740870022825}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 7.6081123, y: 10, z: 20}
-  m_Center: {x: 0.04725206, y: 0, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3400764109dcd448bc0bc3fa3b11ea0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetSpeed: 100
 --- !u!1001 &4713458839142240563
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -214,10 +175,19 @@ PrefabInstance:
       propertyPath: m_Name
       value: RacePointModel
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b1cefed4656f8084e831a4b143683b43,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b1cefed4656f8084e831a4b143683b43,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2474492961009453175}
   m_SourcePrefab: {fileID: 100100000, guid: b1cefed4656f8084e831a4b143683b43, type: 3}
 --- !u!4 &5107971113594582744 stripped
 Transform:
@@ -225,3 +195,31 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4713458839142240563}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5595995244856519778 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b1cefed4656f8084e831a4b143683b43,
+    type: 3}
+  m_PrefabInstance: {fileID: 4713458839142240563}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &2474492961009453175
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5595995244856519778}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2534964839176971238, guid: b1cefed4656f8084e831a4b143683b43, type: 3}

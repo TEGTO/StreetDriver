@@ -2215,7 +2215,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114000012649994662}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: RCC_CustomizerExample, Assembly-CSharp
         m_MethodName: SetRearCambersBySlider
         m_Mode: 2
         m_Arguments:
@@ -4525,7 +4525,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1000013534219852}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -4537,7 +4537,7 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 1000012967875222}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -5580,7 +5580,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 110570}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 0
         m_Arguments:
@@ -6099,7 +6099,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114000012649994662}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: RCC_CustomizerExample, Assembly-CSharp
         m_MethodName: SetRearSuspensionsSpringDamperBySlider
         m_Mode: 2
         m_Arguments:
@@ -6196,7 +6196,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114000012649994662}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: RCC_CustomizerExample, Assembly-CSharp
         m_MethodName: TogglePreviewSmokeByToggle
         m_Mode: 2
         m_Arguments:
@@ -6383,7 +6383,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114000012649994662}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: RCC_CustomizerExample, Assembly-CSharp
         m_MethodName: SetGearShiftingThresholdBySlider
         m_Mode: 2
         m_Arguments:
@@ -6857,7 +6857,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114000012649994662}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: RCC_CustomizerExample, Assembly-CSharp
         m_MethodName: SetRearSuspensionDistancesBySlider
         m_Mode: 2
         m_Arguments:
@@ -7094,7 +7094,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114000012649994662}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: RCC_CustomizerExample, Assembly-CSharp
         m_MethodName: SetFrontSuspensionDistancesBySlider
         m_Mode: 2
         m_Arguments:
@@ -7375,7 +7375,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1000012967875222}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -7387,7 +7387,7 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 1000013534219852}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -7768,7 +7768,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114000012649994662}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: RCC_CustomizerExample, Assembly-CSharp
         m_MethodName: SetSmokeColorByColorPicker
         m_Mode: 2
         m_Arguments:
@@ -8342,7 +8342,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114000012649994662}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: RCC_CustomizerExample, Assembly-CSharp
         m_MethodName: SetClutchThresholdBySlider
         m_Mode: 2
         m_Arguments:
@@ -8687,7 +8687,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114000012649994662}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: RCC_CustomizerExample, Assembly-CSharp
         m_MethodName: SetExhaustFlameByToggle
         m_Mode: 2
         m_Arguments:
@@ -8790,7 +8790,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114000012649994662}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: RCC_CustomizerExample, Assembly-CSharp
         m_MethodName: SetSmokeColorByColorPicker
         m_Mode: 2
         m_Arguments:
@@ -8887,7 +8887,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 111704}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -8899,7 +8899,7 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 145432}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -9306,7 +9306,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114000012649994662}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: RCC_CustomizerExample, Assembly-CSharp
         m_MethodName: SetCounterSteeringByToggle
         m_Mode: 2
         m_Arguments:
@@ -9492,7 +9492,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114000012649994662}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: RCC_CustomizerExample, Assembly-CSharp
         m_MethodName: TogglePreviewExhaustFlameByToggle
         m_Mode: 2
         m_Arguments:
@@ -9590,7 +9590,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114000012649994662}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: RCC_CustomizerExample, Assembly-CSharp
         m_MethodName: SetRevLimiterByToggle
         m_Mode: 2
         m_Arguments:
@@ -9688,7 +9688,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114000012649994662}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: RCC_CustomizerExample, Assembly-CSharp
         m_MethodName: SetTransmission
         m_Mode: 2
         m_Arguments:
@@ -9794,7 +9794,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114000012649994662}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: RCC_CustomizerExample, Assembly-CSharp
         m_MethodName: SetFrontCambersBySlider
         m_Mode: 2
         m_Arguments:
@@ -9909,7 +9909,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114000012649994662}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: RCC_CustomizerExample, Assembly-CSharp
         m_MethodName: SetSmokeColorByColorPicker
         m_Mode: 2
         m_Arguments:
@@ -10884,7 +10884,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114000012649994662}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: RCC_CustomizerExample, Assembly-CSharp
         m_MethodName: SetRearSuspensionsSpringForceBySlider
         m_Mode: 2
         m_Arguments:
@@ -10988,7 +10988,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114000012649994662}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: RCC_CustomizerExample, Assembly-CSharp
         m_MethodName: SetFrontSuspensionsSpringDamperBySlider
         m_Mode: 2
         m_Arguments:
@@ -11093,7 +11093,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114000012649994662}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: RCC_CustomizerExample, Assembly-CSharp
         m_MethodName: SetSHStrength
         m_Mode: 2
         m_Arguments:
@@ -11773,7 +11773,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114000012649994662}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: RCC_CustomizerExample, Assembly-CSharp
         m_MethodName: ChangeWheelsBySlider
         m_Mode: 2
         m_Arguments:
@@ -11987,7 +11987,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 171540}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 0
         m_Arguments:
@@ -12387,7 +12387,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114000012649994662}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: RCC_CustomizerExample, Assembly-CSharp
         m_MethodName: SetFrontSuspensionsSpringForceBySlider
         m_Mode: 2
         m_Arguments:
@@ -12564,7 +12564,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114000012649994662}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: RCC_CustomizerExample, Assembly-CSharp
         m_MethodName: SetTurboByToggle
         m_Mode: 2
         m_Arguments:
@@ -13010,7 +13010,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114000012649994662}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: RCC_CustomizerExample, Assembly-CSharp
         m_MethodName: SetNOSByToggle
         m_Mode: 2
         m_Arguments:
@@ -15608,7 +15608,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114000012649994662}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: RCC_CustomizerExample, Assembly-CSharp
         m_MethodName: SetSteeringLimitByToggle
         m_Mode: 2
         m_Arguments:
@@ -22034,7 +22034,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114000012649994662}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: RCC_CustomizerExample, Assembly-CSharp
         m_MethodName: SetHeadlightColorByColorPicker
         m_Mode: 2
         m_Arguments:
@@ -26165,7 +26165,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114000012649994662}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: RCC_CustomizerExample, Assembly-CSharp
         m_MethodName: SetHeadlightColorByColorPicker
         m_Mode: 2
         m_Arguments:
@@ -28040,7 +28040,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114000012649994662}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: RCC_CustomizerExample, Assembly-CSharp
         m_MethodName: SetABS
         m_Mode: 2
         m_Arguments:
@@ -31287,7 +31287,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114000012649994662}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: RCC_CustomizerExample, Assembly-CSharp
         m_MethodName: SetSH
         m_Mode: 2
         m_Arguments:
@@ -31299,7 +31299,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1000013530074290}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 0
         m_Arguments:
@@ -32506,7 +32506,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114000012649994662}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: RCC_CustomizerExample, Assembly-CSharp
         m_MethodName: SetESP
         m_Mode: 2
         m_Arguments:
@@ -33142,7 +33142,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114000012649994662}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: RCC_CustomizerExample, Assembly-CSharp
         m_MethodName: SetTCS
         m_Mode: 2
         m_Arguments:
@@ -33631,7 +33631,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114000012649994662}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: RCC_CustomizerExample, Assembly-CSharp
         m_MethodName: SetHeadlightColorByColorPicker
         m_Mode: 2
         m_Arguments:

@@ -1,7 +1,9 @@
 using RaceNS;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 using UnityMethodsNS;
 
 namespace UINS
@@ -15,11 +17,13 @@ namespace UINS
         [SerializeField]
         private GameObject closeMenuPanel;
         [SerializeField]
-        private GameObject levelFinishedText;
+        private GameObject levelFinishedPanel;
         [SerializeField]
         private TextMeshProUGUI timeText;
         [SerializeField]
         private string selectMenuName;
+        [SerializeField]
+        private List<GameObject> disableElementsOnPanelOpen;
 
         private bool isGameFinished = false;
         private RCC_UIDashboardDisplay rCC_UIDashboardDisplay;
@@ -34,13 +38,16 @@ namespace UINS
         }
         private void OnDisable()
         {
-            levelRaceManager.OnGameFinish -= LevelFinished;
-            levelRaceManager.OnGameStart -= StartGame;
+            if(levelRaceManager)
+            {
+                levelRaceManager.OnGameFinish -= LevelFinished;
+                levelRaceManager.OnGameStart -= StartGame;
+            }
         }
         private void Update()
         {
             if (!isGameFinished)
-                timeText.text = ((int)levelRaceManager.Timer).ToString();
+                timeText.text = ((int)levelRaceManager.LeftTime).ToString();
             else
                 timeText.text = "";
         }
@@ -51,23 +58,24 @@ namespace UINS
             closeMenuPanel.SetActive(true);
             menuPanel.SetActive(true);
             openMenuButton.SetActive(false);
+            disableElementsOnPanelOpen.ForEach(x => x.SetActive(false));
         }
         public void LevelFinished()
         {
-            EnableMenu();
             isGameFinished = true;
-            levelFinishedText.SetActive(true);
+            levelFinishedPanel.SetActive(true);
+            menuPanel.SetActive(false);
+            openMenuButton.SetActive(false);
+            closeMenuPanel.SetActive(false);
             if (rCC_UIDashboardDisplay)
                 rCC_UIDashboardDisplay.displayType = RCC_UIDashboardDisplay.DisplayType.Off;
         }
         public void CloseMenu()
         {
-            if (!isGameFinished)
-            {
-                menuPanel.SetActive(false);
-                closeMenuPanel.SetActive(false);
-                openMenuButton.SetActive(true);
-            }
+            menuPanel.SetActive(false);
+            closeMenuPanel.SetActive(false);
+            openMenuButton.SetActive(true);
+            disableElementsOnPanelOpen.ForEach(x => x.SetActive(true));
         }
         private void StartGame()
         {

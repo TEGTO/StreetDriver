@@ -84,16 +84,16 @@ public class RCC_AIWPEditor : Editor {
 	
 	public void GetWaypoints(){
 		
-		wpScript.waypoints = new List<RCC_Waypoint>();
+		//wpScript.waypoints = new List<RCC_Waypoint>();
 		
-		RCC_Waypoint[] allTransforms = wpScript.transform.GetComponentsInChildren<RCC_Waypoint>();
+		//RCC_Waypoint[] allTransforms = wpScript.transform.GetComponentsInChildren<RCC_Waypoint>();
 		
-		foreach(RCC_Waypoint t in allTransforms){
+		//foreach(RCC_Waypoint t in allTransforms){
 			
-			if(t != wpScript.transform)
-				wpScript.waypoints.Add(t);
+		//	if(t != wpScript.transform)
+		//		wpScript.waypoints.Add(t);
 			
-		}
+		//}
 		
 	}
 	

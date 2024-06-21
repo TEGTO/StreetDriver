@@ -9,8 +9,11 @@ EditorBuildSettings:
     path: Assets/!/Level/Scenes/Scene 1.unity
     guid: c850ee8c3b14cc8459e7e186857cf567
   - enabled: 1
-    path: Assets/!/Level/Scenes/Scene 2.unity
-    guid: 52a7c144128ac8a4d94ef4b31887d8fe
+    path: Assets/!/Level/Scenes/Race/Race_Bootstrapper.unity
+    guid: 8e351956e2186be4a9cdbea986402448
+  - enabled: 1
+    path: Assets/!/Level/Scenes/Race/Race.unity
+    guid: f05a71fd08880cc4caaefc62220e5f1e
   m_configObjects:
     com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000,
       guid: 8f93e9b0bcc23c3469789f7d6aff1a64, type: 2}

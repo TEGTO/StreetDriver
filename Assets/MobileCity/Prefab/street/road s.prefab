@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 23092777590642444}
   - component: {fileID: 4275395293940102745}
   - component: {fileID: 5651516881470416728}
+  - component: {fileID: 4540518303146667099}
   m_Layer: 0
   m_Name: road s
   m_TagString: Untagged
@@ -30,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
   m_LocalPosition: {x: 119.1132, y: 0.00020170957, z: -190.48543}
-  m_LocalScale: {x: 1, y: 1.5, z: 1}
+  m_LocalScale: {x: 0.5742886, y: 0.5, z: 0.5742886}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -111,7 +112,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!64 &5651516881470416728
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -119,7 +120,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1186792242508418}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: f448f5174fe1e9d4fa069d4a075eea2a, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -134,3 +135,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: b827141cf24cad043abd71e4095d4776, type: 3}
+--- !u!114 &4540518303146667099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186792242508418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d82d600ed5f8d604ea0a8b3befe62c21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  changeKinematicState: 0
+  proceedLayer:
+    serializedVersion: 2
+    m_Bits: 4294967295

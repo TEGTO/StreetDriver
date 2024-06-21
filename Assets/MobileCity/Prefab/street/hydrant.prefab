@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 23577605649809174}
   - component: {fileID: 65902797586036044}
   - component: {fileID: 5865924781698399217}
+  - component: {fileID: 5800068704682111974}
+  - component: {fileID: 524833586865869311}
   m_Layer: 0
   m_Name: hydrant
   m_TagString: Untagged
@@ -30,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
   m_LocalPosition: {x: 45.21, y: 0.00019928553, z: -86.971}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 0.6666667, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -133,3 +135,35 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5800068704682111974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403983258000946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d82d600ed5f8d604ea0a8b3befe62c21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  changeKinematicState: 0
+  proceedLayer:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!208 &524833586865869311
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403983258000946}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.37500003, y: 0.59300005, z: 0.32500002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.59300005, z: 0}
+  m_TimeToStationary: 0.5

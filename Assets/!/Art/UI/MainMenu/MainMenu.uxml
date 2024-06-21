@@ -1,0 +1,21 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/!/Art/UI/MainMenu/MainMenu.uss?fileID=7433441132597879392&amp;guid=2b7ff3034dd33a343a74552241655d20&amp;type=3#MainMenu" />
+    <ui:VisualElement name="main-container" class="main-container">
+        <ui:VisualElement name="header" class="header-container">
+            <ui:VisualElement name="balance" class="balance">
+                <ui:Label name="balance-amount" tabindex="-1" text="10000$" parse-escape-sequences="true" display-tooltip-when-elided="true" class="balance-amount" />
+                <ui:Button name="balance-add" text="+" parse-escape-sequences="true" display-tooltip-when-elided="true" class="balance-add" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="body" class="body-container" />
+        <ui:VisualElement name="footer" class="footer-container" style="justify-content: center; align-items: center;">
+            <ui:VisualElement name="footer-controls" class="footer-controls" style="justify-content: space-between; height: 40%;">
+                <ui:Button name="left-switch" text="&lt;" parse-escape-sequences="true" display-tooltip-when-elided="true" class="left-switch" />
+                <ui:VisualElement name="play-button" parse-escape-sequences="true" display-tooltip-when-elided="true" class="play-button">
+                    <ui:Button text="PLAY" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+                </ui:VisualElement>
+                <ui:Button name="right-switch" text="&gt;" parse-escape-sequences="true" display-tooltip-when-elided="true" class="right-switch" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

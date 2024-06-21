@@ -1,0 +1,123 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.balance {
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+    margin: 10px;
+}
+
+.balance > * {
+    background-color: rgb(255, 217, 133);
+    border-width: 2px;
+    -unity-text-align: middle-center;
+    -unity-font-style: bold;
+    -unity-font: url('project://database/Assets/RealisticCarControllerV3/Editor/Font/good%20times%20rg.ttf?fileID=12800000&guid=785355b5b16010247bb360cd2c286bd8&type=3#good times rg');
+    -unity-text-outline-width: 0.5px;
+    -unity-text-outline-color: rgb(0, 0, 0);
+    font-size: 14px;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+    border-color: rgb(236, 191, 90);
+    border-radius: 7px;
+    white-space: normal;
+    text-overflow: clip;
+}
+
+.balance-amount {
+    flex-grow: 4;
+    height: 100%;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 10px;
+}
+
+.balance-add {
+    flex-grow: 1;
+    height: 100%;
+    color: white;
+    width: 20px;
+    padding: 10px;
+    margin: 0;
+    margin-left: 5px;
+}
+
+.body-container {
+    display: flex;
+    flex-grow: 2;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.footer-controls {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    height: 20%;
+}
+
+.footer-controls > * {
+    height: 100%;
+    margin-left: 40px;
+    margin-right: 40px;
+    flex-grow: 3;
+    border-radius: 7px;
+    border-width: 2px;
+    font-size: 50px;
+    text-shadow: 0 0 20px rgb(0, 0, 0);
+    border-radius: 7px;
+    white-space: normal;
+    text-overflow: clip;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    -unity-text-align: middle-center;
+}
+
+.play-button {
+    flex-grow: 6;
+    justify-content: flex-end;
+}
+
+.play-button > * {
+    width: 100%;
+    height: 5px;
+    background-color: rgba(255, 236, 167, 0.84);
+    -unity-text-outline-width: 0.5px;
+    -unity-text-outline-color: rgb(0, 0, 0);
+    -unity-font-style: bold;
+    -unity-font: url('project://database/Assets/RealisticCarControllerV3/Editor/Font/good%20times%20rg.ttf?fileID=12800000&guid=785355b5b16010247bb360cd2c286bd8&type=3#good times rg');
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-left-color: rgb(255, 217, 80);
+    border-right-color: rgb(255, 217, 80);
+    border-top-color: rgb(255, 217, 80);
+    border-bottom-color: rgb(255, 217, 80);
+    border-color: rgb(236, 191, 90);
+    font-size: 17px;
+    -unity-text-align: middle-center;
+}

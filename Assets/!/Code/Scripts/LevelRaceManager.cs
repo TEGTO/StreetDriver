@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
 namespace RaceNS
@@ -10,19 +9,25 @@ namespace RaceNS
         public static LevelRaceManager Instance { get; private set; }
 
         [SerializeField]
-        private List<RacePoint> racePoints;
-        [SerializeField]
         private float startTime = 20;
         [SerializeField]
         private float timeForPoint = 10;
-
-        private bool isRaceStarted = false;
+        [SerializeField]
+        private float minPointSpawnChance = 50;
+        [SerializeField]
+        private float timeToMaxDifficulty = 300;
 
         public Action OnGameStart;
         public Action OnGameFinish;
 
-        public RacePoint CurrentPoint { get; private set; }
-        public float Timer { get; private set; }
+        private float raceStartTime;
+
+        public float LeftTime { get; private set; }
+        public float DifficultyCoefficient { get => (Time.fixedTime - raceStartTime) / timeToMaxDifficulty; }
+        public HashSet<RacePoint> RacePoints { get; private set; } = new HashSet<RacePoint>();
+        public bool IsRaceStarted { get; private set; }
+        public Action<RacePoint> OnPlayerCrossPoint { get; set; }
+        public Action<RacePoint> OnNonPlayerCrossPoint { get; set; }
 
         private void Awake()
         {
@@ -31,46 +36,52 @@ namespace RaceNS
             else
                 Destroy(this);
         }
+        private void OnDestroy()
+        {
+            Instance = null;
+        }
         private void Start()
         {
-            racePoints.ForEach(x => x.DisablePoint());
-            Timer = startTime;
+            LeftTime = startTime;
         }
         private void Update()
         {
-            if (Timer > 0 && isRaceStarted)
-                Timer -= Time.deltaTime;
-            else if (Timer < 0)
+            if (LeftTime > 0 && IsRaceStarted)
+                LeftTime -= Time.deltaTime;
+            else if (LeftTime < 0)
                 FinishGame();
         }
         public void CrossedPoint(RacePoint racePoint)
         {
-            if (racePoint == CurrentPoint)
+            racePoint.DisablePoint();
+            LeftTime += timeForPoint;
+            OnPlayerCrossPoint?.Invoke(racePoint);
+        }
+        public void CrossedPointNoNPlayer(RacePoint racePoint)
+        {
+            racePoint.DisablePoint();
+            OnNonPlayerCrossPoint?.Invoke(racePoint);
+        }
+        public void AddPoint(RacePoint racePoint)
+        {
+            if (SpawnRacePointByDifficulty())
             {
-                racePoints.Remove(racePoint);
-                racePoint.DisablePoint();
-                Timer += timeForPoint;
-                if (racePoints.Count == 0)
-                    FinishGame();
-                else
-                {
-                    CurrentPoint = racePoints.FirstOrDefault();
-                    CurrentPoint.EnablePoint();
-                }
+                RacePoints.Add(racePoint);
+                racePoint.EnablePoint();
             }
         }
         public void StartRace()
         {
-            CurrentPoint = racePoints.FirstOrDefault();
-            CurrentPoint.EnablePoint();
             OnGameStart?.Invoke();
-            isRaceStarted = true;
+            IsRaceStarted = true;
+            raceStartTime = Time.fixedTime;
         }
         private void FinishGame()
         {
             OnGameFinish?.Invoke();
-            isRaceStarted = false;
-            Timer = 0;
+            IsRaceStarted = false;
+            LeftTime = 0;
         }
+        private bool SpawnRacePointByDifficulty() => Mathf.Lerp(100, minPointSpawnChance, DifficultyCoefficient) > UnityEngine.Random.Range(0, 100);
     }
 }

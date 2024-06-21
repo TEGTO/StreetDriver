@@ -24,7 +24,7 @@ namespace RaceNS
         }
         private void RotateTowardsTarget()
         {
-            RacePoint racePoint = levelRaceManager.CurrentPoint;
+            RacePoint racePoint = null;
             if (racePoint != null)
             {
                 Vector3 lookTo = racePoint.transform.position;
